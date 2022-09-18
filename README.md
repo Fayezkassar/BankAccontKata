@@ -1,7 +1,14 @@
 # BankAccontKata
 Think of your personal bank account experience. When in doubt, go for the simplest solution
 
-#User Stories
+# Requirements
+
+Deposit and Withdrawal
+Account statement (date, amount, balance)
+Statement printing
+The expected result is a service API, and its underlying implementation, that meets the expressed needs.
+
+# User Stories
 
 US 1:
 
