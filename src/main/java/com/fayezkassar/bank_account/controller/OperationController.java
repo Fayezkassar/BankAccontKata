@@ -24,17 +24,17 @@ public class OperationController {
 
     @PostMapping()
     ResponseEntity<Operation> createOperation(@Valid @RequestBody OperationDTO operationDTO) {
-        log.info("Create Account - START");
+        log.info("Create Operation - START");
         Operation operationCreated = operationService.performOperation(operationDTO);
-        log.info("Create Account - END");
+        log.info("Create Operation - END");
         return new ResponseEntity<>(operationCreated, HttpStatus.CREATED);
     }
 
     @GetMapping("/{accountNumber}")
     ResponseEntity<List<Operation>> getAccountByAccountNumber(@PathVariable String accountNumber) {
-        log.info("GET Account - START");
+        log.info("GET Operations - START");
         List<Operation> operations = operationService.getOperationsByAccountNumber(accountNumber);
-        log.info("GET Account - END");
+        log.info("GET Operations - END");
         return new ResponseEntity<>(operations, HttpStatus.OK);
     }
 }

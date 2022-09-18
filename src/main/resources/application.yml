@@ -1,2 +1,5 @@
+spring:
+    jpa:
+        show-sql: true
 server:
     port: 8085
